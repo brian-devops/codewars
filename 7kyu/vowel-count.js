@@ -6,8 +6,9 @@
 // The input string will only consist of lower case letters and/or spaces.
 
 function getCount(str) {
+  //placeholder for the count
   let vowelsCount = 0;
-  //regex to match the vowels and /g to search the whole string
+  //regex to match the vowels and /g to search the whole string for all matches and not just the first find
   const regEx = str.match(/[aeiou]/g);
   // return with Error if null or the count otherwise
   return vowelsCount === null ? "Error" : regEx.length;
