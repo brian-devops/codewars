@@ -13,3 +13,10 @@ function getCount(str) {
   // return with Error if null or the count otherwise
   return vowelsCount === null ? "Error" : regEx.length;
 }
+
+function getCount(str) {
+  //Create the regex to match the vowels
+  const regEx = str.match(/[aeiou]/gi);
+  //return regex(vowel) count OR empty count(0)
+  return (regEx || []).length;
+}
