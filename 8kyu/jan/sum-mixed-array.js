@@ -4,11 +4,9 @@
 
 //https://www.codewars.com/kata/57eaeb9578748ff92a000009/train/javascript
 
-function sumMix(x) {
+function sumMix(num) {
   //Convert the string value to integers
-  x = x.map(i => Number(i));
+  num = num.map(i => i ** 2);
 
-  //Sum each number in the array
-  const reducer = (accumulator, currentValue) => accumulator + currentValue;
-  return x.reduce(reducer);
+  return num;
 }
